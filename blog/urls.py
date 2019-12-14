@@ -20,4 +20,5 @@ from website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
+    path('cadastro/', views.cadastro),
 ]
