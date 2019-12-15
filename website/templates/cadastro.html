@@ -4,7 +4,7 @@
 {% block content %}
 
 <section>
-    <form action="/cadastro" method="post">
+    <form action="/cadastro" method="POST">
         {% csrf_token %}
         <label for="nome"> Nome: </label>
         <input name='nome' type="text">
@@ -18,7 +18,7 @@
         <label for=""> Escreva seu comentário aqui </label>
         <input name="frase" id="frase" cols='30' rows='10' required>
 
-        <input type="submit" id='botao' value="Enviar">
+        <input type="submit" id='botao' value="Cadastrar">
 
     </form>
 </section>

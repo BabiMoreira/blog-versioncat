@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+    {% csrf_token %}
+    <form action="/login" method="POST">
+        <input name='email' type="email" placeholder="Email">
+        <input name='senha' type="password" placeholder="Senha">
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+{% endblock %}
